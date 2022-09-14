@@ -8,9 +8,9 @@
 
     <title>Under the Sea Blog</title>
   </head>
-  <body>
+  <body class="blog">
     <header class="blogHeader">
-    <nav class="navBar">
+    <nav class="navBar wrappper">
       <ul>
         <l1><a href="index.html">Home</a></l1>
         <l1><a href="#">About</a></l1>
@@ -18,31 +18,12 @@
         <l1><a href="contact.html">Contact</a></l1>
       </ul>
     </nav>
-      <h1>Blog</h1>
-    </header>
-    <main class="wrapper">
-      <img src="under-the-sea-assets/blog-post-image.jpg" alt="red coral reef" />
-      <div>
-        <h2>Discovering New Speciers</h2>
-        <h3>Monday May 4th 2019 by Donald</h3>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, porro
-          commodi nemo labore iste ipsam vero quod amet officiis exercitationem
-          dolore eos voluptas consequatur quibusdam delectus? Nostrum quas
-          possimus maiores! Debitis sed vero suscipit quisquam quas voluptas
-          dolore nisi, praesentium voluptatibus ducimus! Expedita, debitis,
-          accusamus ratione animi, a aliquam odit amet quo pariatur molestias
-          dolore dolorem eaque hic aspernatur ducimus? Dolor, excepturi!
-          Voluptate vitae tempora voluptatibus maxime debitis enim, incidunt
-          accusantium quaerat soluta illo ipsum doloribus nostrum voluptatum
-          repudiandae odio ratione vero corrupti repellat fugiat odit. Tenetur
-          ad dolores omnis.
-        </p>
-      </div>
-    </main>
-    <aside>
-        <img src="under-the-sea-assets/side-blog-image.jpg" alt="whale amoungst fish">
-        <div>
+    <h1>Blog</h1>
+  </header>
+<main class="blogMain">
+  <aside>
+    <div>
+          <img src="under-the-sea-assets/side-blog-image.jpg" alt="whale amoungst fish">
             <h4>About under the sea</h4>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla sequi, sunt impedit enim vitae sed!</p>
             <h4>Recent Posts</h4>
@@ -52,25 +33,51 @@
                 <li>Lorem ipsum dolor sit.</li>
                 <li>Lorem ipsum dolor sit</li>
             </ul>
+          </div>
+        </aside>
+    <section class="blogIntro">
+        <img src="under-the-sea-assets/blog-post-image.jpg" alt="red coral reef" />
+        <div class="wrappper">
+          <div>
+            <h2>Discovering New Speciers</h2>
+            <h3>Monday May 4th 2019 by Donald</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, porro
+              commodi nemo labore iste ipsam vero quod amet officiis exercitationem
+              dolore eos voluptas consequatur quibusdam delectus? Nostrum quas
+              possimus maiores! Debitis sed vero suscipit quisquam quas voluptas
+              dolore nisi, praesentium voluptatibus ducimus! Expedita, debitis,
+              accusamus ratione animi, a aliquam odit amet quo pariatur molestias
+              dolore dolorem eaque hic aspernatur ducimus? Dolor, excepturi!
+              Voluptate vitae tempora voluptatibus maxime debitis enim, incidunt
+              accusantium quaerat soluta illo ipsum doloribus nostrum voluptatum
+              repudiandae odio ratione vero corrupti repellat fugiat odit. Tenetur
+              ad dolores omnis.
+            </p>
+          </div>
+  
         </div>
-    </aside>
-    <section class="wrapper"
-        <h4>Comments:</h4>
-        <div><img src="under-the-sea-assets/comment-1.jpg" alt="womans face">
-        <p>Tuesday October 9th, 2018 by Jeraman</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam fuga alias saepe quas cum possimus id ipsa laborum nesciunt, itaque eius ad, quasi tenetur perferendis similique voluptatem nobis eos.</p>
-        </div>
-        <div>
-            <img src="under-the-sea-assets/comment-2.jpg" alt="contributors picture">
-            <p>Wednesday October 10th, 2018 by Julie</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae distinctio soluta veniam aliquam provident commodi blanditiis tempore dolores nulla adipisci porro ut pariatur, ipsa culpa doloremque laudantium at placeat debitis.</p>
-        </div>
+
+        <div class="wrapper comments"
+              <h4>Comments:</h4>
+              <div><img src="under-the-sea-assets/comment-1.jpg" alt="womans face">
+              <p>Tuesday October 9th, 2018 by Jeraman</p>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsam fuga alias saepe quas cum possimus id ipsa laborum nesciunt, itaque eius ad, quasi tenetur perferendis similique voluptatem nobis eos.</p>
+              </div>
+              <div>
+                  <img src="under-the-sea-assets/comment-2.jpg" alt="contributors picture">
+                  <p>Wednesday October 10th, 2018 by Julie</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae distinctio soluta veniam aliquam provident commodi blanditiis tempore dolores nulla adipisci porro ut pariatur, ipsa culpa doloremque laudantium at placeat debitis.</p>
+              </div>
+            </div>
+          <form action="#" class="wrapper">
+              <input type="text">
+              <input type="email">
+              <input type="textarea">       
+          </form>
     </section>
-    <form action="#" class="wrapper">
-        <input type="text">
-        <input type="email">
-        <input type="textarea">       
-    </form>
+
+</main>
     <footer>
         Copyright &copy; HackerYou
     </footer>

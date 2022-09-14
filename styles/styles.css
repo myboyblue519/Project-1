@@ -71,7 +71,7 @@ button:focus {
   color: #fff;
 }
 
-main, .connections, .monthProfile {
+.indexMain, .connections, .monthProfile {
   background-color: #0c1423;
 }
 
@@ -98,6 +98,9 @@ img {
 
 footer {
   background-color: #86e0f9;
+}
+footer p {
+  margin: 0;
 }
 
 header {
@@ -212,7 +215,7 @@ h1 {
 }
 
 .connectionsSub {
-  height: 100vh;
+  height: 75vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -223,7 +226,8 @@ h1 {
           justify-content: center;
 }
 .connectionsSub div {
-  width: 50%;
+  width: 40%;
+  padding: 35px 35px;
 }
 
 .profileContainer {
@@ -235,8 +239,10 @@ h1 {
 .monthProfile {
   height: 60vh;
 }
-.monthProfile img {
-  border: 25px solid #86e0f9;
+
+.banner {
+  background-image: url(../under-the-sea-assets/banner.jpg);
+  height: 65vh;
 }
 
 .monthFish {
@@ -248,6 +254,11 @@ h1 {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  position: relative;
+  left: -30px;
+  -webkit-box-shadow: 20px 20px #86e0f9;
+          box-shadow: 20px 20px #86e0f9;
+  top: 30px;
 }
 
 .monthText {
@@ -279,4 +290,38 @@ h1 {
           justify-content: space-between;
   height: 45vh;
   padding: 100px;
+}
+
+.blog {
+  background-color: #0c1423;
+}
+.blog header {
+  height: 54vh;
+}
+.blog main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.blog aside {
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.blog aside img {
+  position: relative;
+  top: 1px;
+  left: -20px;
+}
+.blog aside div {
+  background-color: #0f614e;
+}
+.blog .blogIntro {
+  width: 60%;
+  margin-left: 105px;
+  margin-top: 40px;
+}
+.blog .blogIntro img {
+  position: relative;
+  top: -210px;
 }

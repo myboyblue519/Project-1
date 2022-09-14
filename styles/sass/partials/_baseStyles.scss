@@ -29,7 +29,7 @@
     }
   }
 
-  main, .connections, .monthProfile {
+  .indexMain, .connections, .monthProfile {
     background-color: $tertiaryColor ;
   }
   .discover, .gallery {
@@ -55,3 +55,8 @@ img {
   display: block;
   height: auto;
 }
+
+// .fa-solid {
+//   color: $white;
+//   background-color: $white;
+// }

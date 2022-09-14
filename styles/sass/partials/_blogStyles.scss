@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+.blog {
+    background-color: $tertiaryColor;
+header {
+    height: 54vh;
+}
+main {
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    margin-left: 20px;
+    margin-top: 40px;
+    img {
+        position: relative;
+        top: 1px;
+        left: -20px;
+      }
+    div{
+        background-color: #0f614e;
+    }
+}
+.blogIntro {
+    width: 60%;
+    margin-left: 105px;
+    margin-top: 40px;
+    img {
+        position: relative;
+        top: -210px;
+      }
+  }
+}
+
+

@@ -58,7 +58,7 @@
 //         width: 40%;
 //     }
 // }
-.
+
 
 .connectionsSub {
     height: 75vh;
@@ -70,7 +70,7 @@
         padding: 35px 35px;
       }
     }
-}
+
 
 .profileContainer{
     display: flex;
@@ -79,15 +79,24 @@
 .monthProfile {
     height: 60vh;
     // display: flex;
-    img {
-        border: 25px solid $primaryColor;
-    }
+    // img {
+    //     border: 25px solid $primaryColor;
+    // }
   }
+
+.banner {
+    background-image: url(../under-the-sea-assets/banner.jpg);
+    height: 65vh;
+}
 
   .monthFish {
     display: flex;
     justify-content: center;
     align-content: center;
+    position: relative;
+    left: -30px;
+    box-shadow: 20px 20px #86e0f9;
+    top: 30px;
     
   }
 
