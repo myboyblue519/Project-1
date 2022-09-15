@@ -1,0 +1,49 @@
+@use "variables" as *;
+
+
+body {
+    background-color:$tertiaryColor;
+}
+.commentBox {
+    max-width: 900px;
+    margin: 10px auto;
+    
+    #name, #email {
+        color: white;
+        display: inline-block;
+        width: 350px;
+        height: 20px;
+        border-bottom: 2px solid $primaryColor;
+        background-color: transparent;
+    }
+    textarea {
+        display: block;
+        width: 710px;
+        border: 2px solid $primaryColor;
+        background-color: transparent;
+        color: white;
+    }
+  }
+  .contactSubmit {
+    width: 90%;
+    height: 50px;
+    background-color: $tertiaryColor;
+    color: $white;
+  }
+
+  .contactComments {
+    display: flex;
+    justify-content: center;
+    background-color: $secondaryColor;
+    width: 50%;
+    position: relative;
+top: -88px;
+right: 1px;
+
+  }
+
+.ourContact {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
