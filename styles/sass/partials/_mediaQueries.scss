@@ -1,0 +1,11 @@
+@use "variables" as *;
+
+@media (max-width: 800px) {
+    // flex display column, remove big pics, hamburger menu
+    .ourContact, .blogMain, .discoverBox1, .discoverBox2, .connectionsSub, .profileContainer, .gallery {
+        flex-direction: column;
+    }
+    .goldfish, .heroImage {
+        display: none;
+    }
+}

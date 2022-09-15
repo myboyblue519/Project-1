@@ -414,3 +414,15 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+@media (max-width: 800px) {
+  .ourContact, .blogMain, .discoverBox1, .discoverBox2, .connectionsSub, .profileContainer, .gallery {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .goldfish, .heroImage {
+    display: none;
+  }
+}
