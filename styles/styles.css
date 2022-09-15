@@ -321,7 +321,39 @@ h1 {
   margin-left: 105px;
   margin-top: 40px;
 }
-.blog .blogIntro img {
+.blog .blogIntro .heroImage {
   position: relative;
   top: -210px;
+  -webkit-box-shadow: -30px 30px #86e0f9;
+          box-shadow: -30px 30px #86e0f9;
+  margin-bottom: -225px;
+}
+.blog .blogIntro .species {
+  border-bottom: 5px solid #86e0f9;
+  border-left: 5px solid #86e0f9;
+  margin-left: -30px;
+}
+.blog .blogIntro .commentBox {
+  max-width: 900px;
+  margin: 10px auto;
+}
+.blog .blogIntro .commentBox #name, .blog .blogIntro .commentBox #email {
+  color: white;
+  display: inline-block;
+  width: 350px;
+  height: 20px;
+  border-bottom: 2px solid #86e0f9;
+  background-color: transparent;
+}
+.blog .blogIntro .commentBox textarea {
+  display: block;
+  width: 710px;
+  border: 2px solid #86e0f9;
+  background-color: transparent;
+  color: white;
+}
+.blog .blogIntro .blogSubmit {
+  width: 710px;
+  height: 50px;
+  background-color: #0f614e;
 }
