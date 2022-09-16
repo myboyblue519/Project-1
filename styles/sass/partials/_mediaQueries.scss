@@ -2,16 +2,61 @@
 
 @media (max-width: 800px) {
     // flex display column, remove big pics, hamburger menu
-    .ourContact, .blogMain, .discoverBox1, .discoverBox2, .connectionsSub, .profileContainer, .gallery {
+    .ourContact, .discoverBox1, .profileContainer, .gallery, .monthProfile,.underSea {
         flex-direction: column;
+        height: auto;
+    }
+    .discoverBox2{
+        flex-direction: column-reverse;
     }
     .goldfish, .heroImage {
         display: none;
     }
+    .connectionsSub  {
+        flex-direction: row;
+        height: auto;
+    }
+    .banner {
+        height: 50vh;
+    }
     h1{
-        font-size: 4rem ;
+        font-size: 4rem;
+    }
+    h2 {
+        font-size: 3rem;
     }
     body {
         width:100%;
+    }
+    // .monthProfile
+    header { 
+        height: 50vh;
+        
+    }
+    .discoverImage1 {
+        position: relative;
+        top: 0px;
+        left: -30px;
+      }
+
+    .gallery{
+        img {
+            padding: 10px;
+          }
+    }
+    .contactComments{
+        width: 100%;
+        position: unset;
+    }
+    .ourContact {
+        margin: 0 20%;
+    }
+    .blog header {
+        height: 35vh;
+    }
+    aside {
+        img{
+            display: none;
+        }
     }
 }
