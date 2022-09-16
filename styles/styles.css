@@ -96,11 +96,16 @@ img {
   height: auto;
 }
 
+.fa-solid {
+  color: #fff;
+}
+
 footer {
   background-color: #86e0f9;
 }
 footer p {
   margin: 0;
+  text-align: center;
 }
 
 header {
@@ -201,8 +206,8 @@ h1 {
   left: -30px;
 }
 .discoverImage1 img {
-  -webkit-box-shadow: 20px 20px #86e0f9;
-          box-shadow: 20px 20px #86e0f9;
+  -webkit-box-shadow: 45px 45px #86e0f9;
+          box-shadow: 45px 45px #86e0f9;
 }
 
 .discoverImage2 {
@@ -211,8 +216,13 @@ h1 {
   right: -70px;
 }
 .discoverImage2 img {
-  -webkit-box-shadow: -45px 40px #86e0f9;
-          box-shadow: -45px 40px #86e0f9;
+  -webkit-box-shadow: -45px 45px #86e0f9;
+          box-shadow: -45px 45px #86e0f9;
+}
+
+.connections {
+  margin-top: 63px;
+  margin-bottom: 10px;
 }
 
 .connectionsSub {
@@ -335,20 +345,20 @@ h1 {
   margin-left: -30px;
 }
 .blog .blogIntro .commentBox {
-  max-width: 900px;
+  max-width: 60%;
   margin: 10px auto;
 }
 .blog .blogIntro .commentBox #name, .blog .blogIntro .commentBox #email {
   color: white;
   display: inline-block;
-  width: 350px;
+  width: 40%;
   height: 20px;
   border-bottom: 2px solid #86e0f9;
   background-color: transparent;
 }
 .blog .blogIntro .commentBox textarea {
   display: block;
-  width: 710px;
+  width: 50%;
   border: 2px solid #86e0f9;
   background-color: transparent;
   color: white;
@@ -364,20 +374,20 @@ body {
 }
 
 .commentBox {
-  max-width: 900px;
+  max-width: 60%;
   margin: 10px auto;
 }
 .commentBox #name, .commentBox #email {
   color: white;
   display: inline-block;
-  width: 350px;
+  width: 20%;
   height: 20px;
   border-bottom: 2px solid #86e0f9;
   background-color: transparent;
 }
 .commentBox textarea {
   display: block;
-  width: 710px;
+  width: 40%;
   border: 2px solid #86e0f9;
   background-color: transparent;
   color: white;
@@ -424,5 +434,11 @@ body {
   }
   .goldfish, .heroImage {
     display: none;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  body {
+    width: 100%;
   }
 }
