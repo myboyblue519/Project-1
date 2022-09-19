@@ -1,7 +1,10 @@
 @use "variables" as *;
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
     // flex display column, remove big pics, hamburger menu
+    img{
+        box-shadow: none;
+    }
     .ourContact, .discoverBox1, .profileContainer, .gallery, .monthProfile,.underSea {
         flex-direction: column;
         height: auto;
@@ -47,6 +50,7 @@
     .contactComments{
         width: 100%;
         position: unset;
+        padding: 0 0px 0 45px;
     }
     .ourContact {
         margin: 0 20%;

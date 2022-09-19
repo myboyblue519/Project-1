@@ -4,17 +4,31 @@
 body {
     background-color:$tertiaryColor;
 }
+.blog .blogIntro .commentBox {
+  max-width: 90%;
+  margin: 10px auto;
+  textarea{
+    width: 90%;
+  }
+  #name, #email {
+    width: 44.4%;
+    margin: 10px 0;
+  }
+
+}
 .commentBox {
-    max-width: 60%;
-    margin: 10px auto;
+  
     
     #name, #email {
+        border: none;
         color: white;
         display: inline-block;
-        width: 20%;
+        width: 44.5%;
         height: 20px;
         border-bottom: 2px solid $primaryColor;
         background-color: transparent;
+        // max-width: 90%;
+        margin: 10px auto;
     }
     textarea {
         display: block;
@@ -37,8 +51,18 @@ body {
     background-color: $secondaryColor;
     width: 50%;
     position: relative;
-top: -88px;
-right: 1px;
+    top: -88px;
+    left: 30px;
+    margin: 0 63px;
+
+    .commentBox textarea {
+      display: inline;
+      width: 90%;
+      border: 2px solid #86e0f9;
+      background-color: transparent;
+      color: white;
+      resize: none;
+    }
 
   }
 
