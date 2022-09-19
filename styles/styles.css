@@ -447,23 +447,35 @@ footer p {
   text-align: center;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 650px) {
+  .blog main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog aside {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  .contactComments {
+    margin: 5px auto;
+    padding: 0px 0px 0 36px;
+  }
+}
+@media (max-width: 1250px) {
   img {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
-  .ourContact, .discoverBox1, .profileContainer, .gallery, .monthProfile, .underSea {
+  .ourContact, .discoverBox1, .profileContainer, .gallery, .monthProfile, .underSea, .discoverBox2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-  }
-  .discoverBox2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
   }
   .goldfish, .heroImage {
     display: none;

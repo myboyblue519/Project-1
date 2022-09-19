@@ -1,17 +1,36 @@
 @use "variables" as *;
 
-@media (max-width: 900px) {
+
+@media (max-width: 650px) {
+    .blog{
+        main{
+            flex-direction: column;
+        }
+        aside{
+            width: 90%;
+        }
+    }
+    h2{
+        font-size: 2.7rem;
+        
+    }
+    .contactComments{
+        margin: 5px auto;
+        padding: 0px 0px 0 36px;
+    }
+} 
+
+@media (max-width: 1250px) {
     // flex display column, remove big pics, hamburger menu
     img{
         box-shadow: none;
     }
-    .ourContact, .discoverBox1, .profileContainer, .gallery, .monthProfile,.underSea {
+    .ourContact, .discoverBox1, .profileContainer, .gallery, .monthProfile,.underSea, .discoverBox2 {
         flex-direction: column;
         height: auto;
     }
-    .discoverBox2{
-        flex-direction: column-reverse;
-    }
+    
+
     .goldfish, .heroImage {
         display: none;
     }
