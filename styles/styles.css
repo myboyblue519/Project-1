@@ -43,6 +43,10 @@ h4 {
 }
 
 /* _baseStyles.scss */
+header h2 {
+  text-align: center;
+}
+
 .wrapper {
   max-width: 1260px;
   width: 90%;
@@ -217,7 +221,7 @@ h1 {
 }
 
 .connectionsSub {
-  height: 75vh;
+  height: 85vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -447,24 +451,6 @@ footer p {
   text-align: center;
 }
 
-@media (max-width: 650px) {
-  .blog main {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .blog aside {
-    width: 90%;
-  }
-  h2 {
-    font-size: 2.7rem;
-  }
-  .contactComments {
-    margin: 5px auto;
-    padding: 0px 0px 0 36px;
-  }
-}
 @media (max-width: 1250px) {
   img {
     -webkit-box-shadow: none;
@@ -525,6 +511,144 @@ footer p {
     display: none;
   }
 }
+@media (max-width: 650px) {
+  .blog main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog aside {
+    width: 90%;
+  }
+  h2 {
+    font-size: 2.7rem;
+  }
+  .contactComments {
+    margin: 5px auto;
+    padding: 0px 0px 0 36px;
+  }
+}
+@media (max-width: 450px) {
+  .monthText {
+    margin-left: 0;
+  }
+  h1 {
+    line-height: 3rem;
+    font-size: 3.2rem;
+    padding: 0;
+  }
+  h2 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+  }
+  h3 {
+    font-size: 1.6rem;
+    letter-spacing: 0.2rem;
+  }
+  h4 {
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+  }
+  .connectionsSub div {
+    width: 100%;
+    padding: 35px 35px;
+  }
+  .discoverBox1 div, .discoverBox2 div {
+    width: 100%;
+    margin: 0;
+  }
+  .discoverImage1, .discoverImage2 {
+    width: 100%;
+    display: block;
+    height: auto;
+    position: unset;
+  }
+  .blog .blogIntro {
+    width: 75%;
+    margin-left: 45px;
+    margin-top: 15px;
+  }
+  a {
+    margin: 0 5px;
+  }
+  .monthFish img, .discoverImage1 img, .discoverImage2 img {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
 .fa-brands, .fa-solid {
   margin: 0 10px;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.carousel {
+  width: 40%;
+  height: 90vh;
+  position: relative;
+  background-color: #0f614e;
+  margin: 0 auto;
+}
+
+.slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  -webkit-transition: 1800ms opacity ease;
+  transition: 1800ms opacity ease;
+  -webkit-transition-delay: 200ms;
+          transition-delay: 200ms;
+}
+.slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+.slide[data-active] {
+  opacity: 1;
+  z-index: 1;
+  -webkit-transition-delay: 0ms;
+          transition-delay: 0ms;
+}
+
+.carouselButtonPrev {
+  left: 1rem;
+}
+
+.carouselButtonNext {
+  right: 1rem;
+}
+
+.carouselButtonNext, .carouselButtonPrev {
+  z-index: 2;
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  border-radius: 0.25rem;
+  padding: 0 0.5rem;
+  background-color: rgba(0, 0, 0, 0.101);
+}
+.carouselButtonNext :hover, .carouselButtonPrev :hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2) #fff;
+}
+.carouselButtonNext :focus, .carouselButtonPrev :focus {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2) #fff;
+  outline: 1px solid black;
 }

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="./script.js" defer></script>
     <script
       src="https://kit.fontawesome.com/0499a3b8f3.js"
       crossorigin="anonymous"
@@ -16,7 +17,7 @@
       <nav class="navBar wrapper">
         <ul>
           <l1><a href="index.html">Home</a></l1>
-          <l1><a href="#">About</a></l1>
+          <l1><a href="#about">About</a></l1>
           <l1><a href="blog.html">Blog</a></l1>
           <l1><a href="contact.html">Contact</a></l1>
         </ul>
@@ -30,7 +31,7 @@
         />
       </div>
     </header>
-    <main class="indexMain">
+    <main class="indexMain" id="about">
       <div class="wrapper underSea">
         <h2>What is under the sea?</h2>
         <p>
@@ -127,21 +128,33 @@
         </div>
       </div>
     </section>
-    <section class="gallery">
-      <!-- <div class="wrapper"> -->
-      <img
-        src="under-the-sea-assets/gallery-image-1.jpg"
-        alt="girl at aqaurium"
-      />
-      <img
-        src="under-the-sea-assets/gallery-image-2.jpg"
-        alt="Shark in aquarium"
-      />
-      <img
-        src="under-the-sea-assets/gallery-image-3.jpg"
-        alt="Fish in aqaurium"
-      />
-      <!-- </div> -->
+    <section class="gallery carousel" data-carousel>
+      <button class="carouselButtonNext" data-carousel-button="previous">
+        &#8658;
+      </button>
+      <button class="carouselButtonPrev" data-carousel-button="next">
+        &#8656;
+      </button>
+      <ul data-slides>
+        <li class="slide" data-active>
+          <img
+            src="under-the-sea-assets/gallery-image-1.jpg"
+            alt="girl at aqaurium"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="under-the-sea-assets/gallery-image-2.jpg"
+            alt="Shark in aquarium"
+          />
+        </li>
+        <li class="slide">
+          <img
+            src="under-the-sea-assets/gallery-image-3.jpg"
+            alt="Fish in aqaurium"
+          />
+        </li>
+      </ul>
     </section>
     <footer><p>Copyright &copy; 2018 HackerYou</p></footer>
   </body>

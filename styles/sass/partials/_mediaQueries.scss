@@ -1,27 +1,8 @@
 @use "variables" as *;
 
 
-@media (max-width: 650px) {
-    .blog{
-        main{
-            flex-direction: column;
-        }
-        aside{
-            width: 90%;
-        }
-    }
-    h2{
-        font-size: 2.7rem;
-        
-    }
-    .contactComments{
-        margin: 5px auto;
-        padding: 0px 0px 0 36px;
-    }
-} 
-
 @media (max-width: 1250px) {
-    // flex display column, remove big pics, hamburger menu
+    
     img{
         box-shadow: none;
     }
@@ -30,7 +11,7 @@
         height: auto;
     }
     
-
+    
     .goldfish, .heroImage {
         display: none;
     }
@@ -50,7 +31,7 @@
     body {
         width:100%;
     }
-    // .monthProfile
+    
     header { 
         height: 50vh;
         
@@ -59,12 +40,12 @@
         position: relative;
         top: 0px;
         left: -30px;
-      }
-
+    }
+    
     .gallery{
         img {
             padding: 10px;
-          }
+        }
     }
     .contactComments{
         width: 100%;
@@ -82,4 +63,82 @@
             display: none;
         }
     }
+}
+
+@media (max-width: 650px) {
+    
+    .blog{
+        main{
+            flex-direction: column;
+        }
+        aside{
+            width: 90%;
+        }
+    }
+    h2{
+        font-size: 2.7rem;
+        
+    }
+    .contactComments{
+        margin: 5px auto;
+        padding: 0px 0px 0 36px;
+    }
+} 
+
+@media (max-width: 450px) {
+    .monthText{
+        margin-left: 0;
+    }
+
+  
+    h1{
+        line-height: 3rem;
+        font-size: 3.2rem;
+        padding:0;
+    }
+    h2 {
+        font-size: 2.4rem;
+        line-height: 2.5rem;
+
+    }
+    h3 {
+        font-size: 1.6rem;
+        letter-spacing: 0.2rem;
+      }
+
+    h4 {
+        font-size: 1.2rem;
+        letter-spacing: 0.4rem;
+      }
+
+    .connectionsSub div {
+        width: 100%;
+        padding: 35px 35px;
+      }
+
+    .discoverBox1 div, .discoverBox2 div {
+        width: 100%;
+        margin:0;
+      }
+    .discoverImage1, .discoverImage2 {
+            width: 100%;
+            display: block;
+            height: auto;
+            position: unset;
+   }
+    
+   .blog .blogIntro {
+    width: 75%;
+    margin-left: 45px;
+    margin-top: 15px;
+  }
+  
+  a{
+    margin: 0 5px;
+  }
+  .monthFish, .discoverImage1, .discoverImage2  {
+     img {
+    box-shadow: none;
+  }
+}
 }

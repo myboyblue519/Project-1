@@ -1,7 +1,11 @@
 @use "variables" as *;
 
 /* _baseStyles.scss */
-
+header{
+  h2{
+    text-align: center;
+  }
+}
 .wrapper{
     max-width: 1260px;
     width: 90%;
@@ -56,6 +60,7 @@ img {
   display: block;
   height: auto;
 }
+// improperly nested, fix next time
 
 .fa-solid {
   color: $white;
