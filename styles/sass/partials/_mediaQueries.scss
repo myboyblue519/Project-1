@@ -139,6 +139,31 @@
   .monthFish, .discoverImage1, .discoverImage2  {
      img {
     box-shadow: none;
-  }
-}
+        }  
+  }       
+
+    .toggleButton {
+        display: flex;
+    }
+
+    .navBarLinks{
+        display: none;
+        width: 100%;
+        ul{
+            flex-direction: column; 
+            width: 100%;
+        }
+        li {
+            text-align: center;
+        }
+        
+    }
+
+    .navBarLinks.active{
+        display:flex ;
+    }
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }

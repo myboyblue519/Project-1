@@ -151,6 +151,41 @@ h1 {
       -ms-flex-pack: end;
           justify-content: end;
 }
+.navBar li {
+  list-style: none;
+}
+
+.toggleButton {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+.toggleButton .bar {
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.toggleButton:hover {
+  background-color: rgba(0, 0, 0, 0.215);
+}
+
+.navBarLinks ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .underSea {
   height: 100vh;
@@ -575,6 +610,39 @@ footer p {
   .monthFish img, .discoverImage1 img, .discoverImage2 img {
     -webkit-box-shadow: none;
             box-shadow: none;
+  }
+  .toggleButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navBarLinks {
+    display: none;
+    width: 100%;
+  }
+  .navBarLinks ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+  }
+  .navBarLinks li {
+    text-align: center;
+  }
+  .navBarLinks.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .navBar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 .fa-brands, .fa-solid {
