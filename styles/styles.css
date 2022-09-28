@@ -156,29 +156,15 @@ h1 {
 }
 
 .toggleButton {
+  display: none;
+  z-index: 10;
   position: absolute;
   top: 0.75rem;
   right: 1rem;
-  display: none;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 30px;
-  height: 21px;
-}
-.toggleButton .bar {
-  height: 3px;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 10px;
 }
 
 .toggleButton:hover {
-  background-color: rgba(0, 0, 0, 0.215);
+  background-color: rgba(0, 0, 0, 0.123);
 }
 
 .navBarLinks ul {
@@ -654,8 +640,12 @@ footer p {
           box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 .carousel {
-  width: 40%;
+  width: 70%;
   height: 90vh;
   position: relative;
   background-color: #0f614e;
@@ -689,11 +679,11 @@ footer p {
 }
 
 .carouselButtonPrev {
-  left: 1rem;
+  left: -1rem;
 }
 
 .carouselButtonNext {
-  right: 1rem;
+  right: -1rem;
 }
 
 .carouselButtonNext, .carouselButtonPrev {
@@ -701,7 +691,7 @@ footer p {
   position: absolute;
   background: none;
   border: none;
-  font-size: 4rem;
+  font-size: 2rem;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
